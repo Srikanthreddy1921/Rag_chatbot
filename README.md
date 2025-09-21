@@ -37,6 +37,25 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
+(pip install \
+  fastapi==0.115.0 \
+  starlette==0.38.6 \
+  uvicorn[standard]==0.30.6 \
+  python-dotenv==1.0.1 \
+  pydantic==2.6.4 \
+  pydantic-core==2.16.3 \
+  pydantic-settings==2.2.1 \
+  langchain==0.2.16 \
+  langchain-core==0.2.39 \
+  langchain-community==0.2.11 \
+  langchain-openai==0.1.22 \
+  langchain-text-splitters==0.2.4 \
+  langsmith==0.1.122 \
+  chromadb==0.5.5 \
+  SQLAlchemy==2.0.34 \
+  pypdf==4.3.1)
+The above requirements if you want to use OpenAI other wise remove langchain
+
 cp .env.example .env
 ```
 
